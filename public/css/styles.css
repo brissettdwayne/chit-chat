@@ -1,0 +1,21 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #fff;
+  background-color: #333;
+}
+
+.form {
+  padding-left: 3em;
+  padding-right: 3em;
+  width: 100%;
+}
+
+.form-holder {
+  margin-top: 10em;
+}
+
+#messages {
+  list-style-type: none;
+  padding-bottom: 2em;
+}
