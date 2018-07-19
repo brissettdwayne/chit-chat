@@ -32,7 +32,12 @@ function isTyping() {
 
 function emitEvents() {
   socket.on('userCount', function (data) {
-    $('#user-count').text(data.userCount + ' Users Online');
+    if (data.userCount == 1) {
+      $('#user-count').text(data.userCount + ' User Online');
+    }
+    else {
+      $('#user-count').text(data.userCount + ' Users Online');
+    }
   });
   socket.on('typing', function(data){
     $('#typing').html($('<p>').text(data + ' is typing').addClass('form-text text-muted font-italic'));
